@@ -5,6 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
+
 namespace bigschool.Models
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -29,5 +30,9 @@ namespace bigschool.Models
                 .WillCascadeOnDelete(false);
             base.OnModelCreating(modelBuilder);
         }
+        //public static ApplicationDbContext Create()
+        //{
+        //    return new ApplicationDbContext();
+        //}
     }
 }
