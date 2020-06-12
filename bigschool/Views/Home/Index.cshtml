@@ -39,7 +39,9 @@
                 var buttion = $(e.target);
                 $.post("/api/attendances", { courseId: buttion.attr("data-course-id") })
                 .done(function () {
-                    buttion.removeClass("btn-default").addClass("btn-info").text("Going");
+                    buttion.removeClass("btn-default")
+                   .addClass("btn-info")
+                   .text("Going");
                 })
                 .fail(function () {
                     alert("Something failed");
