@@ -12,9 +12,9 @@
 <ul class="course" id="native">
     @foreach (var course in Model.UpcomingCourses)
     {
-        <li class="card">
-            <h3 style="text-align:center; font-weight:bold; color:red">LỊCH KHAI GIẢNG</h3>
-            <div class="date" style="margin-left:80px">
+        <li>
+            
+            <div class="date" >
                 <div class="month">
                     @course.DateTime.ToString("MM")
                 </div>
@@ -24,9 +24,9 @@
             </div>
             <br />
 
-            <div class="details" style="margin-left:90px">
-                <br /> <br /> <br />
-                <span class="lecturer" style="font-weight:bold">
+            <div class="details" >
+                
+                <span class="lecturer" >
                     @course.Lecturer.Name
                     @if (Model.ShowAction)
                     {
