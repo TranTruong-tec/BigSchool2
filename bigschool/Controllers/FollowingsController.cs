@@ -52,8 +52,8 @@ namespace bigschool.Controllers
         }
     }
 
-    public class FollowingDto
-    {
-        public string FolloweeId { get; set; }
-    }
+    //public class FollowingDto
+    //{
+    //    public string FolloweeId { get; set; }
+    //}
 }
